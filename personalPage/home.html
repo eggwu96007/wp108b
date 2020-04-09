@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<title>eggwu的首頁</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*超連結顏色*/
+a:link{
+  color: yellow;
+}
+a:visited{
+  color: dodgerblue;
+  background-color:transparent;
+  text-decoration:none;
+}
+a:hover{
+  color: black;
+  text-decoration:none;
+}
+a:active{color: salmon;
+text-decoration: seagreen;}
+
+/* Style the header */
+header {
+  background-color: rgb(32, 158, 42);
+  padding: 20px;
+  font-size: 60px;
+  height: 100px;
+  border-style:unset;
+  border-width: 3px;
+  border-color: darkviolet;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 10%;
+  height: 600px; /* only for demonstration, should be removed */
+  background:black;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type:georgian;
+  padding: 500;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color:chartreuse;
+  height: 100px;
+  float: middle; /* only for demonstration, should be removed */
+}
+aside{height: 600px;
+  background-color:black;}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color:blue;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a href="home.html"><img src="photo/go home.jpg" alt="go home" width="50" height="50">home</a>
+  <a href="html/introduction.html"><img src="photo/go home.jpg" alt="introduction" width="50" height="50">introduction</a>
+  <a href="html/learning.html"><img src="photo/go home.jpg" alt="learning" width="50" height="50">learning</a>
+  <a href="html/dream.html"><img src="photo/go home.jpg" alt="dream" width="50" height="50">dream</a>
+  <a href="html/style.html"><img src="photo/go home.jpg" alt="style" width="50" height="50">style</a>
+</header>
+
+<section>
+  <nav>
+    <ul>
+     777
+     
+    </ul>
+  </nav>
+  
+  <aside>
+    <video width="1080" height="600" controls>
+      <source src="https://youtu.be/F8ys_PBAXoU" type="video/mp4">
+    </video>
+  </aside>
+  <article>
+    拍很久的影片
+    </article>
+    
+</section>
+
+<footer>
+  <p>版權所有翻印必究</p>
+</footer>
+
+</body>
+</html>
