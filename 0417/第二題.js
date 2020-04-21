@@ -1,0 +1,10 @@
+a=1
+b=1
+for(a=1;a<=9;a++)
+{
+        for(b=1;b<=9;b++)
+    {
+        c=a*b
+        console.log(a,"*",b,"=",c)
+    }
+}
