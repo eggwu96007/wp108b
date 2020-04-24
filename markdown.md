@@ -34,6 +34,8 @@
 
 行間<abbr title="Hypertext Markup Language">HTML</abbr>亦受支援。
 
+## 表格
+
 ----|-------
 ch1           ok
 ----|-------
