@@ -7,5 +7,4 @@
   
   怕eggwu食言嗎????何不把這張優惠券給截圖下來勒!!!!!只限今日歐~~~~~~~
   
-  [https://github.com/eggwu96007/wp108b/blob/master/personalPage/photo/go%20home.jpg]
  
