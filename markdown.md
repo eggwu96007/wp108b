@@ -33,3 +33,10 @@
 > Markdown使用電郵用字元「>」來引用。
 
 行間<abbr title="Hypertext Markup Language">HTML</abbr>亦受支援。
+
+-----------|-------------
+ch1           ok
+-----------|-------------
+ch2             ok
+-----------|-------------
+ch3             ok
