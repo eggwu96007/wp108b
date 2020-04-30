@@ -1,0 +1,14 @@
+factor=9487;
+console.log("%d的質因數分解為",factor);
+for(i=1;i<=factor;i++)
+{
+    if(factor%i==0)
+    {
+        if(i!=1)
+        {
+            console.log("%d",i);
+        }
+        factor=factor/i;
+        i=1;
+    }
+}

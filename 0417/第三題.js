@@ -9,7 +9,6 @@ function isPrime(n) {
   
   for (var p=3; p<=7; p++) {
     if (isPrime(p))
-    
       a=a+1;
   }
   console.log("countPrime(3, 7) =>",a);
