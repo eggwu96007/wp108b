@@ -1,0 +1,32 @@
+請將本章中的《英翻中》系統，改成《中翻英》系統，但輸入的中文詞彙之間可以強制用空白隔開。
+
+例如:
+$ node mt2.js 一隻 狗 追 一隻 貓
+[ 'a', 'dog', 'chase', 'a', 'cat' ]
+
+請寫出一個具有『加、減、內積、負』的向量物件？ (Vector, add, sub, dot, neg)
+
+提示：第二題架構如下：
+
+class Vector {
+add(v2) { ... }
+sub(v2) { ... }
+dot(v2) { ... }
+neg() { ... }
+}
+
+請把 2 儲存為 vector.js ，然後把當中的類別 Vector 用 module.exports 匯出，並用 vectorTest.js 去測試你的類別。
+
+vectorTest.js
+
+const V = require('./vector')
+var v1 = new V.Vector([1,2,3])
+var v2 = new V.Vector([1,1,1])
+console.log('v1.add(v2)=', v1.add(v2))
+console.log('v1.dot(v2)=', v1.dot(v2))
+console.log('v1.neg()=', v1.neg())
+輸出
+
+v1.add(v2)= [2,3,4]
+v1.dot(v2)= 6
+v1.neg() = [-1,-2,-3]
