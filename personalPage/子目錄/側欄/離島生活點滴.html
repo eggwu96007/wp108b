@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<title>gameroom</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/*側欄*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*工具列*/
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 3;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*超連結顏色*/
+a:link{
+  color: yellow;
+}
+a:visited{
+  color: dodgerblue;
+  background-color:transparent;
+  text-decoration:none;
+}
+
+a:active{color: salmon;
+text-decoration: seagreen;}
+
+/* Style the header */
+header {
+  background-color: rgb(255, 255, 255);
+  font-size: 30px;
+  height: 50px;
+  border-style:unset;
+  border-width: 100px;
+
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 150px;
+  height: 1500px; /* only for demonstration, should be removed */
+  background:white;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type:georgian;
+  padding: 500;
+}
+
+
+
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+aside{height: 600px;font-family:標楷體;
+  background-color:rgb(255, 255, 255);}
+
+/* Style the footer */
+footer {
+  background-color:blue;
+  padding: 10px;
+  width:100%;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 150px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+div.ex1 {
+  width: 200px;
+  height:200px;
+  background-color: yellow;
+}
+
+ 
+</style>
+</head>
+<body>
+  
+  
+
+<header>
+  <div class="navbar">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="../側欄/離島生活點滴.html">離島生活點滴</a>
+      <a href="../側欄/相片集.html">相片集</a>
+      <a href="../側欄/自我介紹.html">自我介紹</a>
+    </div>
+    
+    <span style="font-size:30px;float:left;cursor:pointer" onclick="openNav()">&#9776;</span>
+    
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "150px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+    
+
+    <a href="../../home.html">回首頁</a>
+    <a href="../gameroom/gameroom.html">game room</a>
+    <a href="../classroom/classroom.html">eggwu的小教室</a>
+    <div class="dropdown">
+      <button class="dropbtn">全國美食、景點特搜
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="../tourist/tourist.html">景點</a>
+        <a href="../food/food.html">美食</a>
+      </div>
+    </div> 
+    
+  </div>
+</header>
+<section>
+  <nav>
+    <ul>
+      
+     
+    </ul>
+  </nav>
+ 
+  
+  <aside>
+<p style="font-size: 30px;">讀大學前請三思<br></p>
+<p style="font-size: 30px;margin: -30px;">----------------<br></p>
+<p style="font-size: 25px;">第一思:為什麼要讀大學<br></p>
+<p>讀大學不一定會讓未來十全十美，不唸大學也不一定代表人生就是黑暗的；有許多的名人，像是王永慶，他只有小學畢業，但卻有如此成就。所以，學歷不一定是一切。<br>
+所謂的一切，完全操之在己，讀大學只是一個文憑，可有可無，充實自己的生活最重要。</p>
+<p style="font-size: 25px;">第二思:為什麼要讀這個科系<br></p>
+<p>在選填志願之前，一定要徹徹底底地了解自己喜歡甚麼科系，討厭甚麼科系，絕對不能有這種心態:分數到了就好；大學講求的是學問，而不是分數，分數只是個手段，<br>
+最終目的還是為了求得知識，充實自己；而不是讀了自己不喜歡的科系後，強迫自己要喜歡上這個科系，縱使這個科系再怎麼好、學校再怎麼好，不符合自己的風格，只會使<br>
+自己的大學生活過得很痛苦。則其所愛，愛你所選。
+<p style="font-size: 25px;">第三思:對於未來的人生規劃</p>
+<p>大學這四年，能改變的事情可多了。大學不像是高中、國中，上課時間周遭的人們都是認識的、天天都相處在一起的；大學在一起上課的人幾乎都不一樣的，不能預測你明天<br>
+  上課旁邊坐的會是誰，除非系上的必修課才可能會認識他們。學校、系上有許多活動，這些活動，像是系學會，雖然很累，但是可以累積自己的能力、充實自我。綜合前者的<br>
+人脈、後者的能力提升，可以使自己更了解自己，結合人脈及能力，對於未來一定有相當大的幫助。
+<p style="font-size: 30px;">================<br></p>
+<p style="font-size: 30px;">來離島念大學前的準備(金門)<br></p>
+<p style="font-size: 30px;margin: -30px;">----------------<br></p>
+<p>離島，又稱作偏鄉，對於天龍國的人來說一定不習慣，第一，沒有所謂的夜生活，沒有夜店、沒有夜衝、KTV很早就結束了；第二，交通恨不方便，一小時甚至更久，公車才來一班<br>
+，所以來離島念書一定要有代步工具，不然你會死掉QQ；第三，除非本身就是居住在這塊土地上生活的，不然離本島如此之遠，多少會有思鄉之情，思鄉之情，得調適一段時間ㄋ；總結，<br>
+來離島念書心理素質一定要很堅強，否則會....玻璃心碎光光:)<br>
+<p>離島物質很不方便，沒有百貨公司、沒有outlet，想血拚，只能網購；食物，一到晚上7點多，店家幾乎都要休息；宵夜，一根手指應該算得出來；沒有麥當勞，沒有肯德基，速食應該<br>
+只有摩斯漢堡；天氣很極端，一下子熱、一下子冷，熱會讓你熱死，冷會讓你冷死，所以衣服要盡量帶齊全，長褲短褲、長袖短袖。
+<p style="font-size: 30px;">================<br></p>
+<p style="font-size: 30px;">來離島念大學的優點缺點(金門)<br></p>
+<p style="font-size: 30px;margin: -30px;">----------------<br></p>
+<p style="font-size: 30px;">優點:<br></p>
+<p>學會獨立。相較於台灣的同學，在離島念書更會獨立；因為從離島回家一定比在台灣那些同學更不方便，再加上什麼事情都要自己來，父母不可隨時隨地都在你身邊，什麼是都要自己來<br>
+久而久之，獨立的習慣就漸漸地高人一等。<br></p>
+<p>金門地理位置特殊，接近中國大陸，所以前往中國大陸是相當方便的；因為這樣，所以可以將金門當作是一個前進中國的踏板。隨著世界趨勢，中國在科技產業可說是不可或缺的一個角色；<br>
+所以在金門唸書，前進中國大陸的機會可能比在一些學校還要來的多。
+<p style="font-size: 30px;">缺點:<br></p>
+<p>離島畢竟就是離島，交通、醫療資源等等都不如本島，所以在離島生活，最好不要生任何重病，一旦不幸發生，只好後送回台灣。<br></p>
+<p>物價相較於台灣某些地區，是相對來的高，所以口袋基本上要深一點才夠生活開銷。
+  <p style="font-size: 30px;">================<br></p>
+<p style="font-size: 30px;"><br>運用離島資源(金門)</p>
+<p style="font-size: 30px;margin: -30px;">----------------<br></p>
+<p>有些事情是在本島做不到的，像是觀光景點；金門的景點分為許多，有人文、有自然；人文包含戰地風光，自然景觀有藍眼淚；除此之外，還有很道地的小吃，像是最有名的廣東粥。這些<br>
+特色是只要離開這塊土地之後就再也嘗試不到的，所以一有空閒時間，不彷到處走走看看，享受獨特的離島生活。    
+    
+    
+  </aside>
+  
+</section>
+
+
+
+
+
+</body>
+</html>

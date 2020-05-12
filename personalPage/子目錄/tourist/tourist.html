@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<title>景點</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/*側欄*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*工具列*/
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 3;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*超連結顏色*/
+a:link{
+  color: yellow;
+}
+a:visited{
+  color: dodgerblue;
+  background-color:transparent;
+  text-decoration:none;
+}
+
+a:active{color: salmon;
+text-decoration: seagreen;}
+
+/* Style the header */
+header {
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+  font-size: 30px;
+  height: 50px;
+  border-style:unset;
+  border-width: 50px;
+  border-color: darkviolet;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 225px;
+  height: 500px; /* only for demonstration, should be removed */
+  background:white;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type:georgian;
+  padding: 20px;
+}
+
+
+
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+aside{height: 750px;
+  background-color:rgb(255, 255, 255);}
+
+/* Style the footer */
+footer {
+  background-color:white;
+  padding: 10px;
+  width:100%;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 150px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+/*照片動畫*/
+body,div,ul,li,a,img{margin: 0;padding: 0;}
+                .slider{width: 988px;margin: 0px auto;position: relative;height: 330px;overflow: hidden;}
+                .slider li{list-style: none;position: absolute;left: 0;top: 0;}
+                .slider img{border: none;height: 330px;width: 988px;}
+                .slider .slider_btn{position: relative;height: 25px;width: 100%;bottom: 0;text-align: right; margin:308px 0px 0 0px; right:80%;}
+                .slider .slider_btn span{display: inline-block;width: 15px;height: 15px;line-height: 15px;text-align: center;margin-right: 5px;cursor: pointer;background: #999;color: #FFFFEF;border-radius: 15px;font-size: 12px;}
+                .slider .slider_btn .cur{background: #E4393C;}
+</style>
+</head>
+<body>
+  
+  
+
+<header>
+  <div class="navbar">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="../側欄/離島生活點滴.html">離島生活點滴</a>
+      <a href="../側欄/相片集.html">相片集</a>
+      <a href="../側欄/自我介紹.html">自我介紹</a>
+    </div>
+    
+    <span style="font-size:30px;float:left;cursor:pointer" onclick="openNav()">&#9776;</span>
+    
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "150px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+    
+
+    <a href="../../home.html">回首頁</a>
+    <a href="../gameroom/gameroom.html">game room</a>
+    <a href="../classroom/classroom.html">eggwu的小教室</a>
+    <div class="dropdown">
+      <button class="dropbtn">全國美食、景點特搜
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="tourist.html">景點</a>
+        <a href="../food/food.html">美食</a>
+      </div>
+    </div> 
+    
+  </div>
+</header>
+<section>
+  
+
+  
+  
+  <aside>
+    <map name="2000px-1997_Taiwan_plan">
+      <area shape="poly" coords="359,85,410,49,476,103,392,165" href="place/台北.html">
+      <area shape="poly" coords="310,113,358,82,389,161,376,180" href="place/桃園.html">
+      <area shape="poly" coords="297,153,308,114,378,183,360,208" href="place/新竹.html">
+      <area shape="poly" coords="248,210,296,151,358,209" href="place/苗栗.html">
+      <area shape="poly" coords="246,209,299,232,317,233,363,208,368,243,282,264,261,285,223,250" href="place/台中.html">
+      <area shape="poly" coords="224,251,252,321,186,316" href="place/彰化.html">
+      <area shape="poly" coords="182,316,247,326,250,361,208,352,164,375" href="place/雲林.html">
+      <area shape="poly" coords="162,376,224,351,276,368,301,386,246,428,230,429,211,394,174,417,157,409" href="place/嘉義.html">
+      <area shape="poly" coords="162,411,176,417,216,399,230,429,252,432,212,484,171,488" href="place/台南.html">
+      <area shape="poly" coords="170,486,206,488,307,387,319,414,284,495,220,501,209,564" href="place/高雄.html">
+      <area shape="poly" coords="211,560,222,498,282,497,292,525,268,568,294,615,285,670" href="place/屏東.html">
+      <area shape="poly" coords="322,412,359,450,397,387,417,656,294,608,267,553,298,507" href="place/台東.html">
+      <area shape="poly" coords="309,401,385,225,446,230,398,394,358,452" href="place/花蓮.html">
+      <area shape="poly" coords="466,109,443,226,367,213,389,159" href="place/宜蘭.html">
+      <area shape="poly" coords="251,279,273,286,372,241,320,392,279,360" href="place/南投.html">
+      <area shape="rect" coords="40,317,110,460" href="place/澎湖.html">
+      <area shape="rect" coords="5,106,101,156" href="place/金門.html">
+      <area shape="rect" coords="34,17,85,59" href="place/馬祖.html">
+    </map>
+    <img src="../../photo/2000px-1997_Taiwan_plan.svg.png" usemap="#2000px-1997_Taiwan_plan">
+    
+  </aside>
+  
+</section>
+
+
+
+
+
+</body>
+</html>
