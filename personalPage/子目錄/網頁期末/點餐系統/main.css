@@ -1,0 +1,274 @@
+/* 參考: https://codepen.io/legeoffrey/pen/mydrVo */
+/*This use to define whole document*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  /* text-align: center; */
+}
+
+
+header a, header a:link {
+  color: white;
+}
+
+a, a:link {
+  text-decoration: none;
+}
+
+main {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+  padding: 10px;
+  /*
+  border: 1px solid #888;
+  background-color: #d0d0d0;
+  */
+}
+
+.text-right {
+  text-align:right;
+}
+
+.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.right {
+  float: right;
+}
+
+table {
+  /* width: 80%; */
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid #333;
+  border-collapse: collapse;
+}
+
+div {
+  /* border: 1px solid #888; */
+  margin-right: auto;
+  margin-left: auto;
+}
+
+th, td {
+  border: 1px solid #333;
+  padding: 3px 6px;
+}
+
+th {
+  background-color: #333;
+  color: #ddd;
+}
+
+textarea, input, select {
+  border-radius: 2px;
+  box-shadow: none;
+  padding: 5px;
+  border:1px solid #888;
+}
+
+button {
+  border: none; /* Remove borders */
+  color: white; /* Add a text color */
+  padding: 5px 10px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+  border-radius: 2px;
+  background-color: #336699;
+}
+
+input[type=number] {
+  width: 5em;
+}
+
+.strong {
+  font-weight: bold;
+  font-size: 120%;
+}
+
+footer {
+  background-color: brown;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  /*超連結顏色*/
+  a:link{
+    color: yellow;
+  }
+  a:visited{
+    color: dodgerblue;
+    background-color:transparent;
+    text-decoration:none;
+  }
+  
+  a:active{color: salmon;
+  text-decoration: seagreen;}
+  
+  /* Style the header */
+  header {
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    font-size: 30px;
+    height: 50px;
+    border-style:unset;
+    border-width: 50px;
+    border-color: darkviolet;
+  }
+  
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+    float: left;
+    width: 225px;
+    height: 500px; /* only for demonstration, should be removed */
+    background:white;
+    padding: 20px;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type:georgian;
+    padding: 20px;
+  }
+  
+  
+  
+  
+  /* Clear floats after the columns */
+  section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  aside{height: 750px;
+    background-color:rgb(255, 255, 255);}
+  
+  /* Style the footer */
+  footer {
+    background-color:white;
+    padding: 10px;
+    width:100%;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 150px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+ .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+
+
+

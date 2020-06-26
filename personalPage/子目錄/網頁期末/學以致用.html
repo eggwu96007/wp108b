@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<title>考試科目</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/*側欄*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*工具列*/
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 3;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*超連結顏色*/
+a:link{
+  color: yellow;
+}
+a:visited{
+  color: dodgerblue;
+  background-color:transparent;
+  text-decoration:none;
+}
+
+a:active{color: salmon;
+text-decoration: seagreen;}
+
+/* Style the header */
+header {
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+  font-size: 30px;
+  height: 50px;
+  border-style:unset;
+  border-width: 50px;
+  border-color: darkviolet;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 225px;
+  height: 400px; /* only for demonstration, should be removed */
+  background:white;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type:georgian;
+  padding: 20px;
+}
+
+
+
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+aside{height: 600px;
+  background-color:rgb(255, 255, 255);}
+
+/* Style the footer */
+footer {
+  background-color:white;
+  padding: 10px;
+  width:100%;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 150px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+  
+  
+
+<header>
+  <div class="navbar">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="../側欄/離島生活點滴.html">離島生活點滴</a>
+      <a href="../側欄/相片集.html">相片集</a>
+      <a href="../側欄/自我介紹.html">自我介紹</a>
+    </div>
+    
+    <span style="font-size:30px;float:left;cursor:pointer" onclick="openNav()">&#9776;</span>
+    
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "150px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+    
+
+    <a href="../../home.html">回首頁</a>
+    <a href="../gameroom/gameroom.html">game room</a>
+    <a href="../classroom/classroom.html">eggwu的小教室</a>
+    <a href="學以致用.html">學以致用</a>
+    <div class="dropdown">
+      <button class="dropbtn">全國美食、景點特搜
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="../tourist/tourist.html">景點</a>
+        <a href="../food/food.html">美食</a>
+      </div>
+    </div> 
+    
+  </div>
+</header>
+<section>
+  <nav>
+    
+   
+
+  </nav>
+ 
+  
+  <aside>
+    <table style="width:1000px;height:600px;">
+      <tr>
+        <th><a style="margin: 5px;" href="翻譯系統/中翻英.html">翻譯系統</a></th>
+        <th><a style="margin: 5px;" href="點餐系統/點餐.html" >點餐系統</a></th> 
+        <th><a style="margin: 5px;" >POS 系統</a></th>
+        <th><a style="margin: 5px;">網誌系統</a></th>
+      </tr>
+      <tr>
+        <th><a style="margin: 5px;" >聊天室</a></th>
+        <th><a style="margin: 5px;" >敬請期待</a></th>
+        <th><a style="margin: 5px;" >敬請期待</a></th>
+        <th><a style="margin: 5px;" >敬請期待</a></th>
+      </tr>
+      <tr>
+        <th><a style="margin: 5px;">敬請期待</a></th>
+        <th><a style="margin: 5px;">敬請期待</a></th>
+        <th><a style="margin: 5px;" >敬請期待</a></th>
+        <th><a style="margin: 5px;" >敬請期待</a></th>
+      </tr>
+      <tr>
+        <th><a style="margin: 5px;" >敬請期待</a></th>
+        <th><a style="margin: 5px;" >敬請期待</a></th>
+        <th><a style="margin: 5px;" >敬請期待</a></th>
+        <th><a style="margin: 5px;" >敬請期待</a></th>
+      </tr>
+    </table>
+  </aside>
+  
+</section>
+
+
+
+
+
+</body>
+</html>
